@@ -34,8 +34,21 @@ function App() {
             ))}
         </div>
       </header>
-      <div>
-        <Spacex />
+      <div className="App-rockets"></div>
+
+      <div className="App-mission">
+        {Object.keys(data)
+          .slice(0, 1)
+          .map(ss => (
+            <div key={ss}>
+              <div className="container">
+                <Spacex
+                  flight_number={data.flight_number}
+                  mission_name={data.mission_name}
+                />
+              </div>
+            </div>
+          ))}
       </div>
     </div>
   );
