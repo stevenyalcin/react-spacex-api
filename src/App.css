@@ -39,7 +39,7 @@
 /* Flex box styling */
 
 .mission-container {
-  margin-top: 1%;
+  margin-top: 2%;
   display: flex;
   flex-wrap: wrap;
   background-image: url('https://images.unsplash.com/photo-1518818419601-72c8673f5852?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjY5MDQ1fQ');
@@ -48,8 +48,8 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   min-height: 120vh;
-  color: #cccccc;
-  justify-content: space-around;
+  color: white;
+  justify-content: space-evenly;
 }
 
 .mission-container > div {
