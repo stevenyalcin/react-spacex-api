@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .App-logo {
@@ -27,24 +28,54 @@
   background-image: url('https://external-preview.redd.it/xRMgJOsK1KhAMO5HxF-w6DvQdFQJMGwXLC1hNXXdKwo.png?auto=webp&s=c922ec9bc8b7cd245a3962ead91a1d00e660c660');
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  min-height: 100vh;
+  min-height: 120vh;
 }
-.App-rockets {
-  background-color: wheat;
+
+.mission-details {
+  margin: 1%;
+  font-size: 2em;
 }
 
 /* Flex box styling */
 
-.container {
+.mission-container {
+  margin-top: 1%;
   display: flex;
   flex-wrap: wrap;
+  background-image: url('https://images.unsplash.com/photo-1518818419601-72c8673f5852?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjY5MDQ1fQ');
+  height: 100px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  min-height: 120vh;
+  color: #cccccc;
   justify-content: space-around;
-  /* background-color: antiquewhite; */
 }
 
 .mission-container > div {
+  margin: 1%;
+  line-height: 2.6em;
+  font-size: 1.5em;
+}
+.falcon-details > div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* Flex box styling */
+
+.mission-images {
+  margin: 0.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.mission-images > img {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  border-radius: 1%;
 }

@@ -1,16 +1,107 @@
 import React from 'react';
 import rocket from '../images/falcon-heavy-render.png';
 
-const Spacex = ({ flight_number, mission_name }) => {
+const Spacex = ({
+  flight_number,
+  mission_name,
+  launch_date_utc,
+  rocket_name,
+  core_serial,
+  flight,
+  block,
+  gridfins,
+  legs,
+  reused,
+  land_success,
+  landing_intent,
+  site_name
+}) => {
   return (
     <div>
-      <h1>Flight # {flight_number}</h1>
-      <h1>Mission name : {mission_name}</h1>
-      <div className="container">
-        <div className="mission-container">
+      <div className="mission-container">
+        <div>
+          <img src={rocket} alt="" height="30%" />
+        </div>
+        <div className="falcon-details">
+          <div>Flight # {flight_number}</div>
+          <div>Mission name : {mission_name}</div>
+          <div>Mission date : {new Date(launch_date_utc).toDateString()}</div>
+          <div>Rocket name : {rocket_name}</div>
+          <div>Core Serial : {core_serial}</div>
+          <div>Flight : {flight}</div>
+          <div>Block : {block}</div>
           <div>
-            <img src={rocket} alt="" />
+            <div>
+              Gridfins : {''}
+              {gridfins ? (
+                <span role="img" aria-label="protein">
+                  ☑️
+                </span>
+              ) : (
+                <span role="img" aria-label="protein">
+                  ❌
+                </span>
+              )}
+            </div>
           </div>
+          <div>
+            <div>
+              Legs : {''}
+              {legs ? (
+                <span role="img" aria-label="protein">
+                  ☑️
+                </span>
+              ) : (
+                <span role="img" aria-label="protein">
+                  ❌
+                </span>
+              )}
+            </div>
+          </div>
+          <div>
+            {' '}
+            <div>
+              Reused : {''}
+              {reused ? (
+                <span role="img" aria-label="protein">
+                  ☑️
+                </span>
+              ) : (
+                <span role="img" aria-label="protein">
+                  ❌
+                </span>
+              )}
+            </div>
+          </div>
+          <div>
+            <div>
+              Landing Success : {''}
+              {land_success ? (
+                <span role="img" aria-label="protein">
+                  ☑️
+                </span>
+              ) : (
+                <span role="img" aria-label="protein">
+                  ❌
+                </span>
+              )}
+            </div>
+          </div>
+          <div>
+            <div>
+              Landing Intent : {''}
+              {landing_intent ? (
+                <span role="img" aria-label="protein">
+                  ☑️
+                </span>
+              ) : (
+                <span role="img" aria-label="protein">
+                  ❌
+                </span>
+              )}
+            </div>
+          </div>
+          <div>Site name : {site_name}</div>
         </div>
       </div>
     </div>
