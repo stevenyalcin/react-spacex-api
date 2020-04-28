@@ -34,11 +34,11 @@ const Spacex = ({
             <div>
               Gridfins : {''}
               {gridfins ? (
-                <span role="img" aria-label="protein">
+                <span role="img" aria-label="gridfins-true">
                   ☑️
                 </span>
               ) : (
-                <span role="img" aria-label="protein">
+                <span role="img" aria-label="gridfins-false">
                   ❌
                 </span>
               )}
@@ -48,11 +48,11 @@ const Spacex = ({
             <div>
               Legs : {''}
               {legs ? (
-                <span role="img" aria-label="protein">
+                <span role="img" aria-label="legs-true">
                   ☑️
                 </span>
               ) : (
-                <span role="img" aria-label="protein">
+                <span role="img" aria-label="legs-false">
                   ❌
                 </span>
               )}
@@ -63,11 +63,11 @@ const Spacex = ({
             <div>
               Reused : {''}
               {reused ? (
-                <span role="img" aria-label="protein">
+                <span role="img" aria-label="reused-true">
                   ☑️
                 </span>
               ) : (
-                <span role="img" aria-label="protein">
+                <span role="img" aria-label="reused-false">
                   ❌
                 </span>
               )}
@@ -77,11 +77,11 @@ const Spacex = ({
             <div>
               Landing Success : {''}
               {land_success ? (
-                <span role="img" aria-label="protein">
+                <span role="img" aria-label="land_success_true">
                   ☑️
                 </span>
               ) : (
-                <span role="img" aria-label="protein">
+                <span role="img" aria-label="land_success_false">
                   ❌
                 </span>
               )}
@@ -91,11 +91,11 @@ const Spacex = ({
             <div>
               Landing Intent : {''}
               {landing_intent ? (
-                <span role="img" aria-label="protein">
+                <span role="img" aria-label="landing_intent_true">
                   ☑️
                 </span>
               ) : (
-                <span role="img" aria-label="protein">
+                <span role="img" aria-label="landing_intent_false">
                   ❌
                 </span>
               )}
