@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Spacex from './components/Spacex';
+import AuthenticationAPI from '../src/components/Auth';
 
 function App() {
   const [data, setData] = useState([]);
 
   async function fetchData() {
-    const result = await fetch('https://api.spacexdata.com/v3/launches/latest');
+    const result = await fetch(AuthenticationAPI.API_URL());
 
     result.json().then(result => setData(result));
   }
