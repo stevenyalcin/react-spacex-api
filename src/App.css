@@ -8,74 +8,75 @@
   pointer-events: none;
 }
 
-.App-header {
-  background-image: url('../src/images/sky.jpg');
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-rockets {
-  background-image: url('https://external-preview.redd.it/xRMgJOsK1KhAMO5HxF-w6DvQdFQJMGwXLC1hNXXdKwo.png?auto=webp&s=c922ec9bc8b7cd245a3962ead91a1d00e660c660');
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  min-height: 120vh;
-}
-
-.mission-details {
-  margin: 1%;
-  font-size: 2em;
-}
-
-/* Flex box styling */
-
-.mission-container {
-  margin-top: 2%;
+.flex-container {
   display: flex;
   flex-wrap: wrap;
-  background-image: url('https://images.unsplash.com/photo-1518818419601-72c8673f5852?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjY5MDQ1fQ');
-  height: 100px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  min-height: 120vh;
-  color: white;
-  justify-content: space-evenly;
-}
-
-.mission-container > div {
-  margin: 1%;
-  line-height: 2.6em;
-  font-size: 1.5em;
-}
-.falcon-details > div {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-/* Flex box styling */
-
-.mission-images {
-  margin: 0.5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.mission-images > img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
-  border-radius: 1%;
+  justify-content: space-around;
+}
+
+html { 
+  background-image: url("./images/spacexbg.jpg") no-repeat center center fixed; 
+  background-image: url("./images/spacexbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+.flex-container > div {
+  margin: 30px;
+  margin-bottom: 100px;
+}
+
+.button {
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  box-shadow: 0 22px 22px 22px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.container { 
+  height: 800px;
+  position: relative;
+}
+
+.loader {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
