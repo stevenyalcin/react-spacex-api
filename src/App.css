@@ -13,6 +13,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 30px;
 }
 
 html { 
@@ -25,7 +26,6 @@ html {
 }
 
 .flex-container > div {
-  margin: 30px;
   margin-bottom: 100px;
 }
 
@@ -79,4 +79,17 @@ html {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 600px) {
+  .button {
+    padding: 15px;
+    font-size: 15px;
+    margin: 10px;
+  }
+  
+  .spacex-logo {
+    width: 400px;
+    margin: 10px;
+  }
 }

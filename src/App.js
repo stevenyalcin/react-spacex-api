@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import AuthenticationAPI from "./Auth";
+import spacexLogo from "./images/spacex.png";
 
 function App() {
   const [data, setData] = useState([]);
@@ -23,6 +24,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div>
+          <img src={spacexLogo} className="spacex-logo" alt="logo" />
+        </div>
         <div className="container">
           {loading ? (
             <div className="loader"></div>
